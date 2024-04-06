@@ -1,8 +1,7 @@
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
+import Header from "../components/Header";
+import AboutMe from "../components/AboutMe";
+import Portfolio from "../components/Portfolio";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
     return (

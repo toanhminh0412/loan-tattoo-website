@@ -90,7 +90,7 @@ const tattoos = [
   
 export default function Portfolio() {
     return (
-    <section className="bg-gray-100">
+    <section className="bg-gray-50">
         <div className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
             <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Check out my past works!</h2>
             <p className="mt-2 text-lg sm:text-xl text-gray-600">
