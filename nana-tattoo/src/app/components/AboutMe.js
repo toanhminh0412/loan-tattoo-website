@@ -11,7 +11,7 @@ export default function AboutMe() {
                             5 years of experience in Inkjet and permanent tattoos. I will bring your body to life with my art. I love to create unique designs that will make you stand out from the crowd.
                         </p>
                         <p className="mt-6 text-base leading-7 text-gray-600">
-                            Discover artistry that speaks on your skin. Your experienced tattoo artist blends unique designs with personal stories, creating masterpieces you'll proudly wear. Transform your vision into ink. Book now.
+                            Discover artistry that speaks on your skin. Your experienced tattoo artist blends unique designs with personal stories, creating masterpieces you&apos;ll proudly wear. Transform your vision into ink. Book now.
                         </p>
                     </div>
                     <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
