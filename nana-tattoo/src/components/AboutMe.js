@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export default function AboutMe() {
     return (
-        <section className="mt-32 overflow-hidden sm:mt-40">
+        <section className="py-32 overflow-hidden sm:py-40 bg-[url('/img/white-bg.jpg')] bg-cover bg-center">
             <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
-                    <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+                    <div className="lg:col-end-1 lg:w-full lg:max-w-xl xl:max-w-2xl lg:pb-8 bg-white p-12 rounded-lg">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About me</h2>
                         <p className="mt-6 text-xl leading-8 text-gray-600">
                             5 years of experience in Inkjet and permanent tattoos. I will bring your body to life with my art. I love to create unique designs that will make you stand out from the crowd.

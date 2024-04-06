@@ -8,9 +8,7 @@ export default function Home() {
         <>
             <Header/>
             <AboutMe/>
-            <div className="mt-20">
-                <Portfolio/>
-            </div>
+            <Portfolio/>
             <Testimonials/>
         </>
     );
