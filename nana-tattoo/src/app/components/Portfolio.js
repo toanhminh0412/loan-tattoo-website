@@ -97,16 +97,16 @@ export default function Portfolio() {
                 Want one like this? Book now!
             </p>
 
-            <div className="mt-6 flex flex-row justify-start flex-wrap gap-x-6 gap-y-10 xl:gap-x-8">
+            <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-10 xl:gap-x-8">
                 {tattoos.map((tattoo) => (
                 <div key={tattoo.id} className="group relative">
                     <Link href={tattoo.href} target="_blank">
-                        <div className="h-40 w-[7.5rem] sm:h-80 sm:w-60 overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75">
+                        <div className="w-full aspect-[5/7] max-w-[300px] overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75">
                             <Image
                                 src={tattoo.imageSrc}
                                 alt={tattoo.imageAlt}
-                                width={240}
-                                height={320}
+                                width={300}
+                                height={420}
                                 className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                             />
                         </div>
