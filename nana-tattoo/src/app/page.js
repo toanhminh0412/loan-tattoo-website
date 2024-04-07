@@ -1,15 +1,15 @@
 import Header from "../components/Header";
-import AboutMe from "../components/AboutMe";
+import PermanentMakeup from "@/components/PermanentMakeup";
 import Portfolio from "../components/Portfolio";
-import Testimonials from "../components/Testimonials";
+import FAQs from "@/components/FAQs";
 
 export default function Home() {
     return (
         <>
             <Header/>
-            <AboutMe/>
+            <FAQs/>
+            <PermanentMakeup/>
             <Portfolio/>
-            <Testimonials/>
         </>
     );
 }

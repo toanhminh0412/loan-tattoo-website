@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function AboutMe() {
     return (
-        <section className="py-32 overflow-hidden sm:py-40 bg-[url('/img/white-bg.jpg')] bg-cover bg-center">
+        <section className="py-32 overflow-hidden sm:py-40 bg-[url('/img/white-bg.jpg')] bg-cover bg-center" id="aboutme">
             <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
                     <div className="lg:col-end-1 lg:w-full lg:max-w-xl xl:max-w-2xl lg:pb-8 bg-white p-12 rounded-lg">

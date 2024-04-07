@@ -8,9 +8,9 @@ import { PopLink, JumpLink } from './motions/Links';
 
 
 const navigation = [
-    { name: 'About me', href: '/aboutme' },
-    { name: 'My works', href: '/works' },
-    { name: 'Testimonials', href: '/testimonials' },
+    { name: 'FAQs', href: '/faqs' },
+    { name: 'Permanent makeup', href: '/permanent-makeup' },
+    { name: 'Tattoo', href: '/tattoo' },
 ]
 
 export default function Navbar() {
@@ -42,7 +42,7 @@ export default function Navbar() {
             ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <PopLink href="#" className="text-sm font-semibold leading-6 text-white">
+            <PopLink href="#booking" className="text-sm font-semibold leading-6 text-white">
                 Book now <span aria-hidden="true">&rarr;</span>
             </PopLink>
             </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
                 </div>
                 <div className="py-6">
                     <PopLink
-                    href="#"
+                    href="#booking"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
                     Book now
