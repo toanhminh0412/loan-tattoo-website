@@ -34,7 +34,7 @@ export default function Booking() {
                     {services.map((service) => (
                         <div key={service.id} className="p-6 bg-white rounded-lg shadow-lg border border-gray-100">
                             <h3 className="text-xl font-bold text-gray-900">{service.name}</h3>
-                            <h2 className="text-3xl font-semibold mt-3 text-gray-600">{service.price}</h2>
+                            <h2 className="text-3xl font-semibold mt-3 text-blue-700">{service.price}</h2>
                             <p className="mt-3 mb-6 text-lg text-gray-600">{service.description}</p>
                             <Link
                                 href="https://squareup.com/appointments/buyer/widget/dfv677bef25jyo/LQ7XGC6J484Z0"
