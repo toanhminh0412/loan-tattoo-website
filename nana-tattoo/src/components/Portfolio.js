@@ -4,88 +4,58 @@ import Link from "next/link"
 const tattoos = [
     {
       id: 1,
-      href: 'https://www.instagram.com/p/C44fCInLoFc/',
-      imageSrc: '/img/tattoo1.png',
+      href: 'https://www.instagram.com/p/C6CK54ovqBV/',
+      imageSrc: '/img/tattoo/tattoo1.jpg',
       imageAlt: "Tattoo 1",
     },
     {
       id: 2,
-      href: 'https://www.instagram.com/p/C5GwXY7RSz_/',
-      imageSrc: '/img/tattoo2.png',
+      href: 'https://www.instagram.com/p/C44d-HPLLl8/?img_index=1',
+      imageSrc: '/img/tattoo/tattoo2.jpg',
       imageAlt: "Tattoo 2",
     },
     {
       id: 3,
-      href: 'https://www.instagram.com/p/C44d-HPLLl8/',
-      imageSrc: '/img/tattoo3.png',
+      href: 'https://www.instagram.com/p/C4zC4JfpvpT/',
+      imageSrc: '/img/tattoo/tattoo3.jpg',
       imageAlt: "Tattoo 3",
     },
     {
       id: 4,
-      href: 'https://www.instagram.com/p/C4zC4JfpvpT/',
-      imageSrc: '/img/tattoo4.png',
+      href: 'https://www.instagram.com/p/Cz21tNNOKZ1/?img_index=1',
+      imageSrc: '/img/tattoo/tattoo4.jpg',
       imageAlt: "Tattoo 4",
     },
     {
       id: 5,
-      href: 'https://www.instagram.com/p/C4zC4JfpvpT/',
-      imageSrc: '/img/tattoo5.png',
+      href: 'https://www.instagram.com/p/Cz4plMOPnCy/?img_index=1',
+      imageSrc: '/img/tattoo/tattoo5.jpg',
       imageAlt: "Tattoo 5",
     },
     {
       id: 6,
-      href: 'https://www.instagram.com/p/C34IaisLhU1/?img_index=1',
-      imageSrc: '/img/tattoo6.png',
+      href: 'https://www.instagram.com/p/C0H-1Gdymqw/?img_index=1',
+      imageSrc: '/img/tattoo/tattoo6.jpg',
       imageAlt: "Tattoo 6",
     },
     {
       id: 7,
-      href: 'https://www.instagram.com/p/C4Zn3AHrQPl/?img_index=1',
-      imageSrc: '/img/tattoo7.png',
+      href: 'https://www.instagram.com/p/C3emIEhOO5q/?img_index=1',
+      imageSrc: '/img/tattoo/tattoo7.jpg',
       imageAlt: "Tattoo 7",
     },
     {
       id: 8,
-      href: 'https://www.instagram.com/p/C308P_Py7p5/?img_index=1',
-      imageSrc: '/img/tattoo8.png',
+      href: 'https://www.instagram.com/p/C5GwXY7RSz_/',
+      imageSrc: '/img/tattoo/tattoo8.jpg',
       imageAlt: "Tattoo 8",
     },
     {
       id: 9,
-      href: 'https://www.instagram.com/p/C3emIEhOO5q/?img_index=1',
-      imageSrc: '/img/tattoo9.png',
+      href: 'https://www.instagram.com/p/C5hfttztei2/',
+      imageSrc: '/img/tattoo/tattoo9.jpg',
       imageAlt: "Tattoo 9",
-    },
-    {
-      id: 10,
-      href: 'https://www.instagram.com/p/C3Yp-Ixv1vn/?img_index=1',
-      imageSrc: '/img/tattoo10.png',
-      imageAlt: "Tattoo 10",
-    },
-    // {
-    //   id: 11,
-    //   href: 'https://www.instagram.com/p/C3YonsKPO0T/',
-    //   imageSrc: '/img/tattoo11.png',
-    //   imageAlt: "Tattoo 11",
-    // },
-    // {
-    //   id: 12,
-    //   href: 'https://www.instagram.com/p/Cz4plMOPnCy/?img_index=1',
-    //   imageSrc: '/img/tattoo12.png',
-    //   imageAlt: "Tattoo 12",
-    // },
-    // {
-    //   id: 13,
-    //   href: 'https://www.instagram.com/p/Cz21tNNOKZ1/?img_index=1',
-    //   imageSrc: '/img/tattoo13.png',
-    //   imageAlt: "Tattoo 13",
-    // },
-    // {
-    //   id: 14,
-    //   href: 'https://www.instagram.com/p/CzFbTtzp3Fg/?img_index=1',
-    //   imageSrc: '/img/tattoo14.png',
-    //   imageAlt: "Tattoo 14",
-    // }
+    }
 ]
   
 export default function Portfolio() {
@@ -100,8 +70,8 @@ export default function Portfolio() {
             <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-10 xl:gap-x-8">
                 {tattoos.map((tattoo) => (
                 <div key={tattoo.id} className="group relative">
-                    <Link href={tattoo.href} target="_blank">
-                        <div className="w-full aspect-[5/7] max-w-[300px] overflow-hidden rounded-lg bg-gray-200 lg:aspect-none group-hover:opacity-75">
+                    <Link href={tattoo.href}>
+                        <div className="w-full aspect-[5/7] max-w-[300px] overflow-hidden rounded-lg bg-gray-200 lg:aspect-none">
                             <Image
                                 src={tattoo.imageSrc}
                                 alt={tattoo.imageAlt}
