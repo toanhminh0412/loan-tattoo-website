@@ -42,8 +42,8 @@ export default function Navbar() {
             ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <PopLink href="#booking" className="text-sm font-semibold leading-6 text-white">
-                Book now <span aria-hidden="true">&rarr;</span>
+            <PopLink href="https://www.instagram.com/loan.pmu/" className="text-sm font-semibold leading-6 text-white">
+                Instagram <span aria-hidden="true">&rarr;</span>
             </PopLink>
             </div>
         </nav>
@@ -78,10 +78,10 @@ export default function Navbar() {
                 </div>
                 <div className="py-6">
                     <PopLink
-                    href="#booking"
+                    href="https://www.instagram.com/loan.pmu/"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
-                    Book now
+                    Instagram
                     </PopLink>
                 </div>
                 </div>

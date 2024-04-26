@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
                 <Navbar/>
                 <main>
                     {children}
-                    <Booking/>
+                    {/* <Booking/> */}
                 </main>
                 <Footer/>
                 {/* <!-- Start Square Appointments Embed Code --> */}

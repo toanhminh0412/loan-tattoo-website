@@ -25,14 +25,20 @@ export default function Header() {
                 </motion.p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
-                    href="/works"
-                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    href="/tattoo"
+                    className="rounded-md bg-blue-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
-                    My works
+                    Tattoo
                     </Link>
-                    <PopLink href="#" className="text-sm font-semibold leading-6 text-white">
-                    Book now <span aria-hidden="true">→</span>
-                    </PopLink>
+                    <Link
+                    href="/permanent-makeup"
+                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                    Permanent makeup
+                    </Link>
+                    {/* <PopLink href="#" className="text-sm font-semibold leading-6 text-white">
+                    Permanent makeup <span aria-hidden="true">→</span>
+                    </PopLink> */}
                 </div>
             </div>
         </section>
