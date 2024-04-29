@@ -21,13 +21,13 @@ const tattooFaqs = [
     },
     {
       id: 4,
-      question: "What is Semi-Permanent Makeup?",
+      question: "WHAT IS SEMI-PERMANENT MAKEUP?",
       answer:
         "It is a complexion treatment particularly to improve eyes, brows, and lips, adding definition to the face.",
     },
     {
       id: 5,
-      question: "How to do a Semi-Permanent Makeup?",
+      question: "HOW TO DO A SEMI-PERMANENT MAKEUP?",
       html: true,
       answer:
         `
@@ -44,7 +44,7 @@ const tattooFaqs = [
 const permanentMakeupFaqs = [
     {
       id: 1,
-      question: "What is the difference between Semi-Permanent Makeup and tattooing?",
+      question: "WHAT IS THE DIFFERENCE BETWEEN SEMI-PERMANENT MAKEUP AND TATTOOING?",
       html: true,
       answer:
         `Body tattoos traditionally tend to last forever.<br>
@@ -52,13 +52,13 @@ const permanentMakeupFaqs = [
     },
     {
       id: 2,
-      question: "Is Semi-Permanent Makeup safe?",
+      question: "IS SEMI-PERMANENT MAKEUP SAFE?",
       answer:
         "Yes. It is an entirely safe treatment. Sterilize tool and environment, especially I only uses the latest technology and follows strict health and safety guidelines for the processes.",
     },
     {
       id: 3,
-      question: "Is Semi-Permanent Makeup painful?",
+      question: "IS SEMI-PERMANENT MAKEUP PAINFUL?",
       answer:
         "I only inject the color pigment on the very superficial surface of the skin, resulting in a slight discomfort for the first few minutes, but it does not hurt, just a little bit stingy.",
     }
