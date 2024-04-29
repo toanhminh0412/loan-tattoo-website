@@ -6,7 +6,7 @@ import { PopLink } from "./motions/Links";
 
 export default function Header() {
     return (
-        <section className="relative bg-[url('/img/avatar.jpg')] h-[90vh] bg-cover bg-fixed" style={{ backgroundPosition: "center 15%" }} id="header">
+        <section className="relative bg-[url('/img/avatar.jpg')] h-[90vh] bg-cover bg-scroll md:bg-fixed" style={{ backgroundPosition: "center 15%" }} id="header">
             <div className="absolute inset-0 bg-gray-900 opacity-75" />
             <div className="relative mx-auto w-full h-full max-w-3xl text-center flex flex-col justify-center px-4 md:px-8">
                 <motion.h2 
