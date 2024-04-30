@@ -21,7 +21,7 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className="mt-6 text-lg leading-8 text-gray-300">
-                    Come visit me at The Blue Rabbit Tattoo & Beauty Bar. I have 5 years of experience in Inkjet and permanent tattoos. I will make your body a walking art.
+                    My name is Loan and I am a Vietnamese trained permanent makeup (PMU) master level Artist, with 5 years experience. And and I also do Tattoo body for 2 years.
                 </motion.p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link

@@ -1,5 +1,5 @@
-import Image from "next/image"
 import Link from "next/link"
+import ExpandableImage from "./ExpandableImage"
 
 const makeups = [
     {
@@ -66,25 +66,9 @@ export default function PermanentMakeup() {
                 <div key={makeup.id} className="group relative">
                     {makeup.href ? 
                     <Link href={makeup.href}>
-                        <div className="w-full aspect-[5/7] max-w-[300px] overflow-hidden rounded-lg bg-gray-200 lg:aspect-none">
-                            <Image
-                                src={makeup.imageSrc}
-                                alt={makeup.imageAlt}
-                                width={300}
-                                height={420}
-                                className="h-full w-full object-cover object-center lg:h-full lg:w-full grayscale hover:grayscale-0"
-                            />
-                        </div>
+                        <ExpandableImage src={makeup.imageSrc} alt={makeup.imageAlt} />
                     </Link> :
-                    <div className="w-full aspect-[5/7] max-w-[300px] overflow-hidden rounded-lg bg-gray-200 lg:aspect-none">
-                        <Image
-                            src={makeup.imageSrc}
-                            alt={makeup.imageAlt}
-                            width={300}
-                            height={420}
-                            className="h-full w-full object-cover object-center lg:h-full lg:w-full grayscale hover:grayscale-0"
-                        />
-                    </div>}
+                    <ExpandableImage src={makeup.imageSrc} alt={makeup.imageAlt} />}
                 </div>
                 ))}
             </div>

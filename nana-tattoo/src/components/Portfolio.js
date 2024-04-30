@@ -1,5 +1,5 @@
-import Image from "next/image"
 import Link from "next/link"
+import ExpandableImage from "./ExpandableImage"
 
 const tattoos = [
     {
@@ -71,15 +71,7 @@ export default function Portfolio() {
                 {tattoos.map((tattoo) => (
                 <div key={tattoo.id} className="group relative">
                     <Link href={tattoo.href}>
-                        <div className="w-full aspect-[5/7] max-w-[300px] overflow-hidden rounded-lg bg-gray-200 lg:aspect-none">
-                            <Image
-                                src={tattoo.imageSrc}
-                                alt={tattoo.imageAlt}
-                                width={300}
-                                height={420}
-                                className="h-full w-full object-cover object-center lg:h-full lg:w-full grayscale hover:grayscale-0"
-                            />
-                        </div>
+                      <ExpandableImage src={tattoo.imageSrc} alt={tattoo.imageAlt} grayscale={true}/>
                     </Link>
                 </div>
                 ))}
