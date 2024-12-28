@@ -14,14 +14,14 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className="text-3xl font-bold tracking-tight text-white sm:text-4xl z-10">
-                    Permanent make up- fine line tattoo Artist
+                    Permanent make up, fine line tattoo artist
                 </motion.h2>
                 <motion.p 
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className="mt-6 text-lg leading-8 text-gray-300">
-                    My name is Loan and I am a Vietnamese trained permanent makeup (PMU) master level Artist, with 5 years experience. And and I also do Tattoo body for 2 years.
+                    My name is Loan. I've been doing permanent makeup (PMU) since 2020 and tattoo since 2023.
                 </motion.p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
