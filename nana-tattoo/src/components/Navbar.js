@@ -1,14 +1,14 @@
 "use client";
 
+import Link from 'next/link';
 import { useState } from 'react'
 
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import { PopLink, JumpLink } from './motions/Links';
 
 
 const navigation = [
-    { name: 'FAQs', href: '/faqs' },
     { name: 'Permanent makeup', href: '/permanent-makeup' },
     { name: 'Tattoo', href: '/tattoo' },
 ]
@@ -35,11 +35,17 @@ export default function Navbar() {
             </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-                <JumpLink key={item.name} href={item.href} className="text-sm font-light leading-6 text-white">
-                {item.name}
-                </JumpLink>
-            ))}
+                {navigation.map((item) => (
+                    <JumpLink key={item.name} href={item.href} className="text-sm font-light leading-6 text-white">
+                    {item.name}
+                    </JumpLink>
+                ))}
+                <div className="dropdown dropdown-hover">
+                    <div className="cursor-pointer text-sm font-light leading-6 text-white flex flex-row items-center gap-1">More <ChevronDownIcon className="h-3 w-3"/></div>
+                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><Link href="/faqs">FAQs</Link></li>
+                    </ul>
+                </div>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <PopLink href="https://www.instagram.com/loan.pmu/" className="text-sm font-semibold leading-6 text-white">
