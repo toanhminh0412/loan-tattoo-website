@@ -23,22 +23,19 @@ export default function Header() {
                     className="mt-6 text-lg leading-8 text-gray-300">
                     My name is Loan. I&apos;ve been doing permanent makeup (PMU) since 2020 and tattoo since 2023.
                 </motion.p>
-                <div className="mt-10 flex items-center justify-center gap-x-6">
+                <div className="mt-10 flex items-center justify-center gap-x-2">
                     <Link
                     href="/tattoo"
-                    className="rounded-md bg-blue-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    className="btn btn-primary"
                     >
                     Tattoo
                     </Link>
                     <Link
                     href="/permanent-makeup"
-                    className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    className="btn"
                     >
                     Permanent makeup
                     </Link>
-                    {/* <PopLink href="#" className="text-sm font-semibold leading-6 text-white">
-                    Permanent makeup <span aria-hidden="true">→</span>
-                    </PopLink> */}
                 </div>
             </div>
         </section>
