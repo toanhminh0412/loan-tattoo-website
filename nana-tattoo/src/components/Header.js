@@ -21,7 +21,7 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     className="mt-6 text-lg leading-8 text-gray-300">
-                    My name is Loan. I've been doing permanent makeup (PMU) since 2020 and tattoo since 2023.
+                    My name is Loan. I&apos;ve been doing permanent makeup (PMU) since 2020 and tattoo since 2023.
                 </motion.p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                     <Link
