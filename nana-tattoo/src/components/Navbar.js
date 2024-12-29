@@ -46,6 +46,7 @@ export default function Navbar() {
                     <div className="cursor-pointer text-sm font-light leading-6 text-white flex flex-row items-center gap-1">More <ChevronDownIcon className="h-3 w-3"/></div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                         <li><Link href="/faqs">FAQs</Link></li>
+                        <li><Link href="/contact">Contact</Link></li>
                     </ul>
                 </div>
             </div>
@@ -86,11 +87,16 @@ export default function Navbar() {
                     </JumpLink>
                     ))}
                     <JumpLink
-                        key="FAQs"
                         href="/faqs"
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
                         FAQs
+                    </JumpLink>
+                    <JumpLink
+                        href="/contact"
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    >
+                        Contact
                     </JumpLink>
                 </div>
                 <div className="py-6">
