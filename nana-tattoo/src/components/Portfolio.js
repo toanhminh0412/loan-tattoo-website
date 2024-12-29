@@ -62,16 +62,19 @@ export default function Portfolio() {
     return (
     <section className="bg-white" id="tattoo">
         <div className="px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <div className="text-center">
             <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Fine-line and custom tattoos</h2>
             <p className="mt-2 text-lg sm:text-xl text-gray-600">
                 Want one like this? Book now!
             </p>
+          </div>
 
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-10 xl:gap-x-8">
+            {/* <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-10 xl:gap-x-8"> */}
+            <div className="mt-12 flex flex-row flex-wrap justify-center items-center gap-4 px-4 md:px-20 lg:px-40">
                 {tattoos.map((tattoo) => (
                 <div key={tattoo.id} className="group relative">
                     <Link href={tattoo.href}>
-                      <ExpandableImage src={tattoo.imageSrc} alt={tattoo.imageAlt} grayscale={true}/>
+                      <ExpandableImage src={tattoo.imageSrc} grayscale={true}/>
                     </Link>
                 </div>
                 ))}
