@@ -7,9 +7,9 @@ export default function Home() {
     return (
         <>
             <Header/>
+            <Contact/>
             <PermanentMakeup/>
             <Portfolio/>
-            <Contact/>
         </>
     );
 }
