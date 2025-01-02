@@ -42,7 +42,9 @@ export default function Contact() {
 
             <div className="flex flex-col-reverse md:flex-row gap-20 justify-center">
                 {/* Picture section */}
-                <div className="w-full md:w-1/2 aspect-[5/7] bg-cover bg-center" style={{ backgroundImage: "url('/img/contact.jpeg')" }}></div>
+                <div className="w-full md:w-1/2 flex md:justify-end">
+                    <div className="w-full md:max-w-[400px] aspect-[5/7] bg-cover bg-center" style={{ backgroundImage: "url('/img/contact.jpeg')" }}></div>
+                </div>
 
                 {/* Info section */}
                 <div className="w-full md:w-1/2">
@@ -71,9 +73,9 @@ export default function Contact() {
                                 ))}
                             </div>
                         </div>
-                        <div className="mt-8 font-light">
+                        {/* <div className="mt-8 font-light">
                             <p>If you have any other questions, feel free to message me at anytime! </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
